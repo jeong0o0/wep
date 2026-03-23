@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  background-color: rgb(221, 230, 207); /* 연한 연두색 배경 */
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* 메인 콘텐츠 영역의 글자색과 줄간격 */
+.main {
+  color: rgb(91, 91, 214); /* 파란색 계열 글자색 */
+  line-height: 2.5;
+  padding: 40px 0; /* 상하 여백 추가 */
+}
+
+/* 상단 내비게이션 바 */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.411); /* 반투명 검정 */
+  color: white;
+  height: 60px;
+  position: sticky; /* 스크롤해도 상단에 고정 (선택 사항) */
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  margin-left: 15px; /* 메뉴가 많아졌으므로 간격을 20px -> 15px로 조절 */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* 메뉴가 많아졌으므로 폰트 크기를 20px -> 16px로 조절 */
+  font-weight: bold;
+  transition: all 0.3s; /* 부드러운 효과 추가 */
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+  color: #ddd;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+/* 버튼 스타일 */
+button {
+  padding: 8px 15px; /* 패딩 살짝 조정 */
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  color: red;
+  background-color: rgb(235, 235, 175);
+  cursor: pointer;
+}

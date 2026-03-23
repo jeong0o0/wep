@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모 - Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 사용자 등록 페이지 전용 추가 스타일 */
+      .form-container {
+        max-width: 500px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+      }
+      input[type='text'],
+      input[type='password'],
+      input[type='email'],
+      input[type='date'],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 12px;
+        background-color: #e57373;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .btn-submit:hover {
+        background-color: #d32f2f;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">webdemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="input.html">Register</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <div class="form-container">
+          <h2>사용자 등록</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="userid">아이디</label>
+              <input
+                type="text"
+                id="userid"
+                name="userid"
+                placeholder="아이디를 입력하세요"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="userpw">비밀번호</label>
+              <input
+                type="password"
+                id="userpw"
+                name="userpw"
+                placeholder="비밀번호 (8자 이상)"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="birth">생년월일</label>
+              <input type="date" id="birth" name="birth" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">이메일 주소</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label>성별</label>
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                id="male"
+                checked
+              />
+              <label style="display: inline" for="male">남성</label>
+              <input type="radio" name="gender" value="female" id="female" />
+              <label style="display: inline" for="female">여성</label>
+            </div>
+
+            <div class="form-group">
+              <label for="major">전공분야</label>
+              <select id="major" name="major">
+                <option value="security">정보보안</option>
+                <option value="web">웹 프로그래밍</option>
+                <option value="cloud">클라우드 컴퓨팅</option>
+                <option value="linux">리눅스 시스템</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="intro">자기소개</label>
+              <textarea
+                id="intro"
+                name="intro"
+                placeholder="간단한 자기소개를 입력하세요"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="checkbox" id="agree" name="agree" required />
+              <label style="display: inline" for="agree"
+                >개인정보 수집 및 이용에 동의합니다.</label
+              >
+            </div>
+
+            <button type="submit" class="btn-submit">등록하기</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모 - Timetable</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 시간표 페이지 전용 디자인 */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        border: 2px solid #aec095;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        border: 1px solid #dee2e6;
+        padding: 12px;
+        text-align: center;
+        font-size: 14px;
+        height: 65px;
+      }
+      th {
+        color: white;
+        background-color: #5b5bd6;
+        font-weight: bold;
+      }
+      .time-col {
+        background-color: #f8f9fa;
+        color: #5b5bd6;
+        font-weight: bold;
+        width: 50px;
+      }
+      .subject {
+        background-color: #e8f5e9;
+        color: #2e7d32;
+        font-weight: bold;
+        border-left: 4px solid #4caf50;
+      }
+      .project {
+        background-color: #e8eaf6;
+        color: #3f51b5;
+        border-left: 4px solid #3f51b5;
+      }
+      .human-rights {
+        background-color: #fff3e0;
+        color: #ef6c00;
+        border-left: 4px solid #ff9800;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">webdemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="input.html">Register</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <h1 style="text-align: center; margin-bottom: 20px">
+          📅 My Academic Timetable
+        </h1>
+
+        <table>
+          <thead>
+            <tr>
+              <th class="time-col"></th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time-col">9</td>
+              <td></td>
+              <td rowspan="2" class="subject">웹프로그래밍<br />C6-0815</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">10</td>
+              <td rowspan="3" class="subject">보안프로토콜<br />C6-0815</td>
+              <td rowspan="3" class="subject">
+                클라우드컴퓨팅보안<br />C6-0833
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">11</td>
+              <td rowspan="2" class="human-rights">
+                일터속인권이야기<br />C6-0312
+              </td>
+              <td rowspan="6" class="project">정보보호<br />프로젝트실습</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">12</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">2</td>
+              <td rowspan="2" class="subject">웹프로그래밍<br />C6-0815</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

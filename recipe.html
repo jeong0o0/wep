@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모 - Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 레시피 페이지 전용 스타일 */
+      .recipe-container {
+        border: 1px solid #ddd;
+        padding: 30px;
+        max-width: 700px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      .ordered-list {
+        border: 1px solid #ffcc80;
+        padding: 20px 20px 20px 50px;
+        background-color: #fffaf0;
+        border-radius: 8px;
+        color: #333;
+      }
+      h2 {
+        color: #e57373;
+        margin-top: 0;
+      }
+      h4 {
+        margin-top: 25px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">webdemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="input.html">Register</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <div class="recipe-container">
+          <h2>🥗 레드향 샐러드 레시피</h2>
+          <p>
+            <b>재료 : </b>레드향 1개, 아보카도 1개, 토마토 1개, 샐러드 채소 30g
+          </p>
+          <p>
+            <b>드레싱 : </b>올리브유 1큰술, 레몬즙 2큰술, 꿀 1큰술, 소금 약간
+          </p>
+
+          <hr />
+
+          <h4>[조리 순서 - ol 활용]</h4>
+          <ol class="ordered-list">
+            <li>
+              샐러드 채소를 씻고 물기를 제거한 후 먹기 좋게 썰어서 준비합니다.
+            </li>
+            <li>레드향과 아보카도, 토마토도 먹기 좋은 크기로 썰어 둡니다.</li>
+            <li>드레싱 재료를 믹서에 한꺼번에 넣고 갈아 줍니다.</li>
+            <li>
+              볼에 샐러드 채소와 레드향, 아보카도, 토마토를 넣고 드레싱을 뿌리면
+              끝!
+            </li>
+          </ol>
+
+          <h4>[특징 - ul 활용]</h4>
+          <ul style="color: #444">
+            <li>신선한 제철 과일을 사용하면 더 맛있습니다.</li>
+            <li>드레싱은 먹기 직전에 뿌리는 것이 좋습니다.</li>
+            <li>비타민이 풍부한 건강 식단입니다.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

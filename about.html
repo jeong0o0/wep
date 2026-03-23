@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모 - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">webdemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="input.html">Register</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <h1>웹 프로그래밍 통합 프로젝트</h1>
+        <h3>
+          웹 개발자를 위한 온라인 매뉴얼 :
+          <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+        </h3>
+        <p>현재시간 : <span id="time"></span></p>
+        <hr />
+        <p>
+          배경색 바꾸기 :
+          <button onclick="pink()">Pink</button>
+          <button onclick="lightblue()">LightBlue</button>
+          <button onclick="yellow()">Yellow</button>
+          <button onclick="reset()">Reset</button>
+        </p>
+        <hr />
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모 - Media</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 멀티미디어 페이지 전용 추가 스타일 */
+      .media-container {
+        max-width: 800px;
+        margin: 20px auto;
+      }
+      section {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+      }
+      video {
+        border: 1px solid #000;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">webdemo</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="input.html">Register</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="container media-container">
+        <h1>멀티미디어 태그 연습</h1>
+
+        <section>
+          <h2>1. 오디오 재생 (Piano.mp3)</h2>
+          <p>컨트롤 바를 표시하고 무한 반복되도록 설정했습니다.</p>
+          <audio src="Piano.mp3" controls loop>
+            이 브라우저는 오디오 태그를 지원하지 않습니다.
+          </audio>
+        </section>
+
+        <section>
+          <h2>2. 비디오 재생 (Video.mp4)</h2>
+          <p>자동 재생(muted 필수)과 루프를 설정한 영상입니다.</p>
+          <video
+            src="Video.mp4"
+            width="640"
+            controls
+            autoplay
+            muted
+            loop
+            preload="auto"
+          >
+            이 브라우저는 비디오 태그를 지원하지 않습니다.
+          </video>
+        </section>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
